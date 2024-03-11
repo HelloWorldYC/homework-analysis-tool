@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="9.0" transformSequenceNumber="3">
+  <directoryPresets config="F:/workspace/homework-analysis-tool/app" />
+  <application name="homework-analysis" distributionSourceDir="F:/workspace/homework-analysis-tool/app" />
+  <executable name="homework-analysis" wrapperType="embed" iconSet="true" iconFile="F:/workspace/homework-analysis-tool/app/astronaut-8061095_1280.ico" executableDir="." executableMode="gui" checkConsoleParameter="true" />
+  <java mainClass="myc.HomeworkAnalysis" vmParameters="-Dappdir=${EXE4J_EXEDIR}" preferredVM="client" minVersion="17">
+    <searchSequence>
+      <registry />
+      <directory location="./custom-runtime-1" />
+    </searchSequence>
+    <classPath>
+      <archive location="F:/workspace/homework-analysis-tool/app/homework-analysis-jar-with-dependencies.jar" failOnError="false" />
+    </classPath>
+  </java>
+</exe4j>

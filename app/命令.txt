@@ -1,0 +1,9 @@
+java --module-path "E:\develop\javafx\javafx-sdk-21.0.1\lib" --add-modules javafx.controls,javafx.fxml -jar .\homework-analysis-jar-with-dependencies.jar
+
+jdeps -s --module-path "E:\develop\javafx\javafx-jmods-21.0.1;E:\develop\jdk\jmods"  .\homework-analysis-jar-with-dependencies.jar
+
+
+jlink --module-path "E:\develop\javafx\javafx-jmods-21.0.1" --add-modules java.base,java.desktop,jdk.charsets,javafx.base,javafx.graphics,javafx.controls --output custom-runtime-1
+
+
+jlink --module-path "E:\develop\javafx\javafx-jmods-21.0.1;E:\develop\jdk\jmods" --add-modules java.base,java.compiler,java.datatransfer,jdk.internal.vm.ci,java.desktop,jdk.internal.vm.compiler,java.instrument,jdk.internal.vm.compiler.management,java.logging,jdk.jartool,java.management,jdk.javadoc,java.management.rmi,jdk.jcmd,java.naming,jdk.jconsole,java.net.http,jdk.jdeps,java.prefs,jdk.jdi,java.rmi,jdk.jdwp.agent,java.scripting,jdk.jfr,java.se,jdk.jlink,java.security.jgss,jdk.jshell,java.security.sasl,jdk.jsobject,java.smartcardio,jdk.jstatd,jdk.localedata,java.sql.rowset,jdk.management,java.transaction.xa,jdk.management.agent,java.xml,jdk.management.jfr,java.xml.crypto,jdk.naming.dns,jdk.accessibility,jdk.attach,jdk.net,jdk.charsets,jdk.compiler,jdk.crypto.cryptoki,jdk.crypto.ec,jdk.crypto.mscapi,jdk.sctp,jdk.dynalink,jdk.security.auth,jdk.editpad,jdk.security.jgss,jdk.hotspot.agent,jdk.unsupported,jdk.httpserver,jdk.unsupported.desktop,jdk.internal.ed,jdk.xml.dom,jdk.internal.jvmstat,jdk.zipfs,javafx.graphics,javafx.base,javafx.controls,javafx.fxml,javafx.media,javafx.swing,javafx.web --output custom-runtime
